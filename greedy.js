@@ -4,7 +4,7 @@ testGreedy(items, 20, cmpDencity)
 
 function cmpDencity(itemA, itemB)
 {
-	const r = itemA.value - itemB.value
+	const r = itemA.value/weight- itemB.value/weight
 	return r
 }
 
@@ -44,11 +44,11 @@ function buildItems()
 	for (let i = 0; i < values.length; i++)
 	{
 		items.push({
-			name:names[i], 
-			value: values[i], 
+			name:names[i],
+			value: values[i],
 			weight: weights[i]
 		})
-	} 
+	}
 	return items
 }
 
