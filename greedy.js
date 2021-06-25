@@ -4,7 +4,7 @@ testGreedy(items, 20, cmpDencity)
 
 function cmpDencity(itemA, itemB)
 {
-	const r = itemA.value/weight- itemB.value/weight
+	const r = itemA.value/itemA.weight- itemB.value/itemB.weight
 	return r
 }
 
